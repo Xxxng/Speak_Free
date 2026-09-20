@@ -1,0 +1,421 @@
+id,set,order,source_number,text
+S01_Q02,1,1,2,What is the weather like in your country? Also tell me about the seasons.
+S01_Q03,1,2,3,How is the weather today where you are? What is happening now?
+S01_Q04,1,3,4,How has the weather changed in your country overtime? Was the weather different when you were a child?
+S01_Q05,1,4,5,I would like to know about your house. How many rooms are there? Also tell me about your favorite room.
+S01_Q06,1,5,6,"Tell me about some problems you have experienced in your house. For example it could be noise from your neighbor, something was broken, or someone you lived with didn't cooperate with you"
+S01_Q07,1,6,7,Tell me about one of the problems you've mentioned above. What was the problem? And how did you deal with it?
+S01_Q08,1,7,8,Tell me about typical restaurant in your country. What are they like and what kind of food do they serve?
+S01_Q09,1,8,9,"When was the last time you ate out? Where did you go, and who did you go with? What did you eat at the restaurant?"
+S01_Q10,1,9,10,Tell me about a special dish you had at a restaurant. How was the food? Was it  memorable?
+S01_Q11,1,10,11,I would like to give you a situation and ask you to act it out. You want to watch a movie with your friend. Call a theater and ask 3 or 4 questions about the movie tickets.
+S01_Q12,1,11,12,I'm sorry but there is a problem I want you to resolve. You just found out you've been sold the wrong tickets. Ask someone at the movie theater for solution giving him or her 2 or 3 alternatives
+S01_Q13,1,12,13,"Have you ever been in a situation or you had a problem with buying tickets or making reservations? What was the situation, and how did you solve the problem?"
+S01_Q14,1,13,14,You indicated in a survey that you take vacations domestically. How is traveling different now compare to the past? Do you think traveling is easier or more difficult now then before?
+S01_Q15,1,14,15,Tell me about some issues concerning traveling. How do the people handle those issues or problems?
+S02_Q02,2,1,2,What type of music do you like listening to? Who is your favorite singer or composer?
+S02_Q03,2,2,3,When and where do you listen to music? Do you listen to the radio? Or do you go to concert?
+S02_Q04,2,3,4,When did you first become interested in listening to music? What kind of music did you listen to when you were a child? How has your interest in music changed over time?
+S02_Q05,2,4,5,Tell me about a beach you like to go to. Where is it? What does it look like? How often do you go to the beach?
+S02_Q06,2,5,6,Tell me about a beach you recently went to. What did it look like? What did you like about the beach?
+S02_Q07,2,6,7,Tell me about a memorable trip to a beach. Where did you go? What did you do there? What made it so memorable?
+S02_Q08,2,7,8,Tell me about gatherings and celebration in your country. How do people celebrate them? And what do they do when they get together?
+S02_Q09,2,8,9,Tell me about the last gathering or celebration you went to. What was it? And what did you do there?
+S02_Q10,2,9,10,Tell me about a memorable experience you had at a gathering or celebration. What happened? And why is it unforgettable?
+S02_Q11,2,10,11,I like to give you a situation and ask you to act it out. You want to buy a piece of furniture for your house. Ask the sales person at the furniture store 3 or 4 questions about the furniture you want to buy.
+S02_Q12,2,11,12,"I’m sorry but there is a problem I want you to resolve. You just found out that there is a problem with the furniture you bought. Call the store, explain the situation and suggest 2 or 3 solutions."
+S02_Q13,2,12,13,Have ever had a problem with something you bought? What was the problem and how did you solved it.
+S02_Q14,2,13,14,Pick 2 of your friends or family members. How are they similar and how are they different?
+S02_Q15,2,14,15,What do you usually talk about with your friends or family members? Tell me about the last conversation you had with one of them.
+S03_Q02,3,1,2,Describe your house to me. What does it look like? What types of room does it have? Also tell me about your favorite room.
+S03_Q03,3,2,3,What activities do you usually do when you are at home? What do you do on weekdays and what do you do on weekends?
+S03_Q04,3,3,4,Tell me about the house you lived in when you were a child. How is it different from the house you live in now?
+S03_Q05,3,4,5,Tell me about one of your family members or friends. What is he or she like? Tell me about the person in detail.
+S03_Q06,3,5,6,What kind of appointments do you usually make? Who do you make appointments with and how do you make them?
+S03_Q07,3,6,7,Tell me about an appointment you made when you were a child. What was the appointment for? Was it with a doctor or a dentist? How did it go?
+S03_Q08,3,7,8,Tell me about a memorable experience you had during an appointment. Was it unexpected? What happened? And how did you deal with the situation?
+S03_Q09,3,8,9,Tell me about your first trip abroad. Where did you go? And who did you go with? What did you do there?
+S03_Q10,3,9,10,Tell me about a memorable or unforgettable experience you had while traveling abroad. What happened and why was the experience memorable?
+S03_Q11,3,10,11,I’d like to give you a situation and ask you to act it out. Your friend wants to go to a park this weekend and invited you to go together. Call your friend and ask 3 or 4 questions about your friend’s plan.
+S03_Q12,3,11,12,"I’m sorry but there is a problem I want you to resolve. You were supposed to pick up your friend to go to park together but something came up, so you can’t make it. Call your friend, explain the situation and suggest 2 or 3 alternatives."
+S03_Q13,3,12,13,"Tell me about a memorable experience you had at a park. What happened and why was it memorable to you, also how did you deal with the situation."
+S03_Q14,3,13,14,"Tell me about some issues people are concern about related to internet these days, maybe there are security or safety related issues? Also how do they affect people’s lives."
+S03_Q15,3,14,15,How is using the internet different among people in different age groups? What do younger people normally do on the internet and what do older people do on the internet?
+S04_Q02,4,1,2,Tell me about transportation in your country. What types of transportation do people use?
+S04_Q03,4,2,3,What kind of transportation do you use to get around? Do you use public transportation? Or do you drive?
+S04_Q04,4,3,4,"Sometimes riding a subway or bus can be uncomfortable, have you ever had any problems while taking public transportation?"
+S04_Q05,4,4,5,Where do you enjoy going camping? Describe the place where you often go  camping and as much details as you can.
+S04_Q06,4,5,6,When did you first start camping? How did you become interested in camping?
+S04_Q07,4,6,7,Tell me about your most memorable camping trip. Where did you go? What did you do while you were camping? Why was it so memorable?
+S04_Q08,4,7,8,I like to know what people in your country do in their free time. What activities do people do? And how do they spend their free time?
+S04_Q09,4,8,9,How have the ways you spend your free time changed over the years? What did you do when you had free time in the past? And what do you do when you have free time now?
+S04_Q10,4,9,10,Tell me about the last time you had free time? When was it? And what did you do? Who did you spend the time with?
+S04_Q11,4,10,11,"You want to go on a trip. Call a travel agency, and ask 3 or 4 questions about the trip you want to take."
+S04_Q12,4,11,12,"You made a reservation for a trip. But something came up, so you cannot go. You have to change your flight schedule. Call a travel agency, explain the situation and give 2 or 3 alternatives."
+S04_Q13,4,12,13,Have you ever had a problem while planning for a trip? What was the problem? And how did you solve the problem?
+S04_Q14,4,13,14,Compare the movies today to movies you watched when you were a child. How have movies changed over the years? Tell me the similarities and differences between them.
+S04_Q15,4,14,15,What issues about movies do you talk about with your friends or your family members these days? What are they and why are they big issues?
+S05_Q02,5,1,2,"Tell me about banks in your country. Where are they located, and what do they look like?"
+S05_Q03,5,2,3,What do you do when you go to the bank? Tell me what you typically do when you go the bank in as much detail as you can.
+S05_Q04,5,3,4,"How have banks changed over the years? How were banks when you were young, and how are they now?"
+S05_Q05,5,4,5,"Tell me about your country's geography. Are there mountains, rivers or lakes in your country?"
+S05_Q06,5,5,6,"What are some typical activities people in your country do? Do they go hiking, go swimming or ride their bicycle?"
+S05_Q07,5,6,7,Tell me about a special landscape you've seen. What is special about it? When did you see it?
+S05_Q08,5,7,8,Tell me about cafes or coffee shops in your country. What are they like? What do people usually do there?
+S05_Q09,5,8,9,Tell me about the first time you went to a coffee shop. When was it? Who did you go with? What do you remember the most about it?
+S05_Q10,5,9,10,Tell me about the most memorable event you've had when you were at a cafe. What happened? and What made it so memorable to you?
+S05_Q11,5,10,11,I'd like to give you a situation and ask you to act it out. Your relatives are going to travel and their house is going to be empty. You are asked to watch the house while they are gone on the trip. Call your relatives and ask 3 or 4 questions about what you need to do.
+S05_Q12,5,11,12,"I'm sorry, but there is a problem I need you to resolve. You just arrived at your relatives' house. But you cannot get into the house because you cannot find the key to the house. Call your relatives and a couple of questions to solve the problem."
+S05_Q13,5,12,13,That's the end of the situation. Have you ever been in a situation you couldn't keep a promise of the friend of family member? What was the reason you couldn't keep the promise? and How did you deal with the situation?
+S05_Q14,5,13,14,Talk about two different kinds of music or musician you like. What are some of the similarities and differences between them?
+S05_Q15,5,14,15,Tell me about some music gadgets or equipment people in your country are interested in. Why are people interested in these music gadgets or equipment?
+S06_Q02,6,1,2,Tell me about a rising industry or company in your country. What is it? And why is that industry or company rising and becoming popular?
+S06_Q03,6,2,3,Tell me about a promising company in that industry you mention about. Why is the company promising? What benefit does it bring to your society?
+S06_Q04,6,3,4,"Tell me about recent changes in that company you mention about. For example, the company released a new product."
+S06_Q05,6,4,5,What kind of concert do you like to go to? Why do you like those kinds of concerts?
+S06_Q06,6,5,6,When did you start going to concerts? How did you first become interested in going concerts?
+S06_Q07,6,6,7,Tell me about the last time you went to a concert. Who's concert was it? Where was it? And who did you go with?
+S06_Q08,6,7,8,You indicated on the survey that you enjoy traveling domestically. What is your favorite location? And why do you like that place?
+S06_Q09,6,8,9,"Tell me about your trip you took in your youth, where did you go? And who did you go with? Why did you go there?"
+S06_Q10,6,9,10,Have you had any interesting or unforgettable experiences while you are traveling in your own country? Tell me what happened in detail.
+S06_Q11,6,10,11,I'd like to give you a situation and ask you to act it out. You want to make a doctor appointment . Call the doctor's office and ask 3 or 4 questions about making an appointment.
+S06_Q12,6,11,12,"I'm sorry but there's a problem i want you to resolve. You made an appointment with your doctor, but something came up. So you cannot make it. Call the doctor's office, explain the situation and reschedule the appointment."
+S06_Q13,6,12,13,Tell me about an experience when you had to cancel an appointment you made. What happened? Why did you had to cancel the appointment? And how did you deal with the situation?
+S06_Q14,6,13,14,Tell me about a country that has similar geographical features to your country. What changes has that country had in a recent year?
+S06_Q15,6,14,15,Tell me about an article you read about the country you mentioned about. Was it political or economical news about the country? What was the news about?
+S07_Q02,7,1,2,Tell me about recycling in your country. How do people recycle? And what do they recycle?
+S07_Q03,7,2,3,How do you recycle? Do you recycle everyday? Where do you take the recycling items to? Tell me all the steps you take for recycling.
+S07_Q04,7,3,4,Tell me about a memorable or unexpected accident you've experienced while you were recycling. What happened? Why was it memorable to you?
+S07_Q05,7,4,5,Let's talk about Holidays in your country. What holidays are there? How are they celebrated?
+S07_Q06,7,5,6,Tell me about a Holiday experience you had when you were a child. What did you do? And who did you spend a holiday with?
+S07_Q07,7,6,7,Tell me about the last Holiday you had. What did you do? Was there anything about that holiday?
+S07_Q08,7,7,8,What is your favorite kind of movie? Why do you like to watch that type of movie?
+S07_Q09,7,8,9,Tell me about the last time you went to a movie. Who did you go with? What did you do before and after going to the movie?
+S07_Q10,7,9,10,Tell me about the most memorable movie you've seen.  What was it about? How did you feel while watching it?
+S07_Q11,7,10,11,"You want to go to the beach with your friend. Call your friend, and ask 3 or 4 questions to make plan to go to the beach."
+S07_Q12,7,11,12,"I'm sorry, But there’s a problem I want you to resolve. You were supposed to go to  the beach with your friend. But you just heard that the weather will be really bad that day. Call your friend, explain a situation and give 2 or 3 solutions."
+S07_Q13,7,12,13,"Have you ever had a problem or unexpected event at the beach? What was the situation, and how did you handle it?"
+S07_Q14,7,13,14,I like to know where you live. How do you solve problems when something happened in your house? How are the ways to solve problems at your home different from the ways your parents solve problems at their home?
+S07_Q15,7,14,15,Tell me about some issues people have when they rent a house or an apartment. What are the things people are concerned about when renting a house or an apartment? And how do they deal with them?
+S08_Q02,8,1,2,What kind of clothes do people wear in your country? What are some fashion trends or special fashion styles in your country?
+S08_Q03,8,2,3,What clothes do you like to wear? What do you usually wear? What are you wearing now?
+S08_Q04,8,3,4,Fashion trends change all the time. What kind of clothes were popular when you were younger? What kind of clothes are popular now?
+S08_Q05,8,4,5,Please describe the park you often go to. Where is it located? What does it look like? What do people do there?
+S08_Q06,8,5,6,How did you first become interested in going to parks? How has your interest in going the parks changed over time?
+S08_Q07,8,6,7,Tell me one memorable experience you had at a park. What happened and why was it memorable?
+S08_Q08,8,7,8,Tell me about hotels in your country. What are they like? Where they located?
+S08_Q09,8,8,9,Can you tell me about the last time you stayed at a hotel? Where did you stay? What did you do at the hotel?
+S08_Q10,8,9,10,Tell me about a memorable hotel you stayed at. Which hotel was it and why was that hotel special to you?
+S08_Q11,8,10,11,I would like to give you a situation and ask you to act it out. You have been invited to your friend’s birthday party. And the party is going to be held at a bar. Call your friend and ask 3 or 4 questions about the location of the party.
+S08_Q12,8,11,12,I’m sorry. But there’s a problem I want you to resolve. You have to take a test tomorrow. So you cannot make it to your friend’s birthday party. Call your friend explain the situation and give 2 or 3 alternatives.
+S08_Q13,8,12,13,Have you ever been in a situation you had to cancel or change your plan because something came up? What was the situation? And how did you solve the problem?
+S08_Q14,8,13,14,You indicated in the survey that you take vacations internationally. How has the traveling abroad changed over the years? Is it easier or more difficult to travel compare to the past?
+S08_Q15,8,14,15,Tell me about things that are important to people when they travel to overseas. What are the things people are interested in seeing? What are the things that are important to do to travelers?
+S09_Q02,9,1,2,You indicated in the survey that you take vacations domestically. Tell me about some of the places you like to visit. Describe the places and also tell me why you like to visit those places.
+S09_Q03,9,2,3,What do you usually prepare when you take a trip? What are the things you do to prepare for your trips?
+S09_Q04,9,3,4,Tell me about a memorable or unforgettable thing that happened when you traveled in your own country. What happened and what made the experience memorable to you?
+S09_Q05,9,4,5,"You may talk on the phone with your family or friends. When you talk on the phone, what do you normally talk about?"
+S09_Q06,9,5,6,When and where do you chat on the phone? Who do you usually talk to on the phone?
+S09_Q07,9,6,7,Tell me about a memorable phone conversation you had. When was it and who did you talk to? Why is it memorable to you?
+S09_Q08,9,7,8,Tell me about a healthy person you know. Why do you think that person is healthy?
+S09_Q09,9,8,9,What things have you tried to stay healthy? Did you eat healthy food? Did you regularly work out?
+S09_Q10,9,9,10,Tell me about some health problems we can have. What are things that can happen related to health? And how can they be fixed?
+S09_Q11,9,10,11,I’d like to give you a situation and ask you to act it out. You want to buy two tickets to a concert. Call the ticket office and ask 3 or 4 questions about buying the tickets.
+S09_Q12,9,11,12,I’m sorry. But there’s a problem I want you to resolve. You were supposed to go to a concert with your friend. But you can’t because you’re very sick. Call your friend explain the situation and give 2 or 3 alternatives.
+S09_Q13,9,12,13,Have you ever been in a situation where you had to cancel a plan at the last minute because something suddenly came up? What was the problem and how did you solve the problem?
+S09_Q14,9,13,14,Compare two different parks you know. How are they different? How are they similar? Which one do you like better? And why do you like it better?
+S09_Q15,9,14,15,Let’s talk about the issues that parks are faced with these days. What do you think are the challenges that parks face? What has caused these concerns? And how can they be solved?
+S10_Q02,10,1,2,(2:17) Please describe the bar you often go to. What does it look like?
+S10_Q03,10,2,3,"(4:33) Who do you usually go to the bar with. When you go, what do you usually drink and what do you do there?"
+S10_Q04,10,3,4,(6:55) Have you ever had a memorable experience at a bar? What happened and why is it so memorable?
+S10_Q05,10,4,5,(9:16) Tell me about your favorite piece of furniture in your house? What does it look like and why do you like that piece of furniture?
+S10_Q06,10,5,6,(11:38) Tell me about the furniture you had when you were a child. How was it different from the furniture you have now?
+S10_Q07,10,6,7,(13:59) Have you ever had any problems with a piece of furniture. Was it broken? did it have a stain? tell me what happened and how you solved the problem.
+S10_Q08,10,7,8,(16:26) What kind of music do you listen to? Who is your favorite musician or composer?
+S10_Q09,10,8,9,(18:45) How did you first become interested in listening to  music? How has your taste in music developed and changed over time?
+S10_Q10,10,9,10,(21:08) Do you have any experience of listening to live music? What was it? who were you with? and how did you like it?
+S10_Q11,10,10,11,(23:31) I’d like to give you a situation and ask you to act it out. You want to buy an mp3 player. Call your friend and ask 3 or 4 questions about your friend’s mp3 player to help you decide which mp3 player to buy.
+S10_Q12,10,11,12,"(26:11) I’m sorry but there’s a problem I want you to resolve. You borrowed an mp3 player from your friend but you accidently broke it. Call your friend, explain a situation and just suggest 2 or 3 alternatives."
+S10_Q13,10,12,13,(28:50) That’s the end of the situation. Have you ever been in a situation where you or someone you know broke a piece of equipment? What was the problem and how did you solve it?
+S10_Q14,10,13,14,(31:20) How has the way people maintain their health change in your country over the years? What things are different about maintaing health from the past to the present?
+S10_Q15,10,14,15,(33:47) Tell me about some health related issues that are in the news recently. Why are the issues and what are people saying about them? Talk about problems that are related to health in detail
+S11_Q02,11,1,2,Where do you enjoy going camping? Describe the camp ground when you ofthen go to camping in as much detail as you can.
+S11_Q03,11,2,3,What do you usaully do when you go camping? Tell me some activities you do while camping.
+S11_Q04,11,3,4,Tell me about an memorable experience you had while camping. What happened? And why was it so memorable?
+S11_Q05,11,4,5,"Describe your house to me. What does it look like? What types of room does it have? Also, tell me about your favorite room."
+S11_Q06,11,5,6,Tell me about the house you lived in when you were a child. How is it different from the house you live in now?
+S11_Q07,11,6,7,Can you tell me about your change you made to your home? What was the change? Why did you decide to make that change?
+S11_Q08,11,7,8,Tell me about take-out or delivery restaurants you like. How often do you eat from there? What are they like? What kind of food do they offer?
+S11_Q09,11,8,9,Can you tell me about the last time you ate something from take-out or delivery restaurant? Where did you go? And who did you go with? What did you eat at the restaurant?
+S11_Q10,11,9,10,"Tell me about a special occasion when you used a take-out or delivery restaurant. What food did you get from that restaurant, and how did it go?"
+S11_Q11,11,10,11,I’d like to give you a situation and ask you to act it out. You want to rent a car for a week. Call the car rental company. And ask 3 or 4 questions about renting a car.
+S11_Q12,11,11,12,"I’m sorry but there’s a problem I need you to resolve. You rented a car, but there's some problems with the car. Call the car rental company, explain the situation, and suggest 2 or 3 alternatives."
+S11_Q13,11,12,13,That’s the end of the situation. Have you ever rented a car? What was the reason you rented the car? Tell me in detail all the things about your experience of renting the car.
+S11_Q14,11,13,14,How was recycling practiced when you were a child? How is it now? Tell me how recycling has changed over the years.
+S11_Q15,11,14,15,Tell me about recycling related issue that was on the news recently. What was the news about? And why was it an issue?
+S12_Q02,12,1,2,Tell me about a beach you like to go to. Where is it? What does it look like? How often do you go to that beach?
+S12_Q03,12,2,3,When do you go to the beach? Who do you usually go to the beach with? What do you do when you go to the beach?
+S12_Q04,12,3,4,Tell me about a memorable trips to the beach. Where did you go? What did you do there? What made it so memorable?
+S12_Q05,12,4,5,What is the movie theater you go to the most often? Where is it? What does it look like?
+S12_Q06,12,5,6,Tell me about the most memorable movie you’ve watched. What is it about? Why was the movie memorable or special to you?
+S12_Q07,12,6,7,"Tell me about actor or actress who's on the news recently. Why was he or she on the news, and what was the issue about?"
+S12_Q08,12,7,8,"What do you usually do on the internet? Do you shop online, read books or post up videos?"
+S12_Q09,12,8,9,Tell me about your first internet surfing experience. What are the things you remember about that experience?
+S12_Q10,12,9,10,You may have things that you remember seen on the internet. Tell me about the memorable things you have seen on the internet. Why were they memorable to you?
+S12_Q11,12,10,11,I would like to give you a situation and ask you to act it out. You are at a bank now because you want to open a bank account. Ask the bank teller 3 or 4 questions about opening a new account.
+S12_Q12,12,11,12,"I'm sorry but there is a problem I need you to resolve. You just found out that you left your credit card at a restaurant. Call the restaurant and explain the situation, describing the table the you sat at and the card you left. Then discuss how to get the card back."
+S12_Q13,12,12,13,"That's the end of the situation. Have you ever had any problems at a bank? What happened, and how did you solve the problem?"
+S12_Q14,12,13,14,"Compare the activities that children do at parks with those that adults do at parks. Also, compare facilities at parks for children and adults. How are they different?"
+S12_Q15,12,14,15,Let's talk about some issues that parks are faced with these days. What do you think are the challenges that parks face? What has caused these concerns and how can they be solved?
+S13_Q02,13,1,2,You indicated in the survey that you go to coffee shops or coffee houses. Tell me about the cafe you often go to. What does it look like? What is special about that cafe?
+S13_Q03,13,2,3,"When you go to a cafe, what do you usually do there? Do you read, do you eat somthing, or do you have a gathering?"
+S13_Q04,13,3,4,How have coffee shops changed over the years? What were they like when you're a child? And what are they like now?
+S13_Q05,13,4,5,"What is the technology you use most often? Is it your computer, or your phone? How often do you use it? And what do you do with it?"
+S13_Q06,13,5,6,How has technology changed over the years? Which things have changed since you were a child?
+S13_Q07,13,6,7,Have you had trouble using new technology? What was the problem? Explain the problem you had with technology in detail.
+S13_Q08,13,7,8,Where do people in your country like to visit? What are the reasons they like to go to the those places or areas?
+S13_Q09,13,8,9,Tell me about an overseas trip you took when you were a child. Where did you go? And who did you go with? What did you do there?
+S13_Q10,13,9,10,Tell me about unforgettable experience you or someone you know experienced while travelling abroad. What happened? And why was the experience memorable?
+S13_Q11,13,10,11,You're going to visit your friend who lives abroad. Call your friend and ask 3 or 4 questions about the country including it’s geography to help you plan your trip.
+S13_Q12,13,11,12,"You were supposed to travel abroad and visit your friend who lives there. But something happened to you, so you cannot go. Call your friend, explain the situation. And suggest 2 or 3 alternatives."
+S13_Q13,13,12,13,That’s the end of the situation. Have ever you traveled overseas? How was the geography of the place you visited diffrent from the geography of your country?
+S13_Q14,13,13,14,"Tell me about the things people do to prepare for a job. Do they get job-training, or do they go to a school?"
+S13_Q15,13,14,15,"What companies do people in your country want to work for these days? Also, tell me about the reasons people want to work at those companies."
+S14_Q01,14,1,1,Tell me about a city or country you visited. What was it like?
+S14_Q02,14,2,2,"What do you usually do when you travel abroad? Tell me some activities you do, or your travelling overseas."
+S14_Q03,14,3,3,"Tell me about your first trip abroad. Where did you go, and who did you go with? What did you do there?"
+S14_Q04,14,4,4,Tell me about one of your family members or friends. What is he or she like? Tell me about the person in detail.
+S14_Q05,14,5,5,What have you done recently with your family members or friends? Tell me about the last time you did something with them.
+S14_Q06,14,6,6,"Tell me about a time you visited a friend or family member. Who did you visit, and what did you do with that person?"
+S14_Q07,14,7,7,"What kinds of appointments do you usually make with people? How do you make the appoinments, and who do you make them with?"
+S14_Q08,14,8,8,What was the last appointment you made? What was it about? What did you do to make the appoinment?
+S14_Q09,14,9,9,Tell me about an appointment you had that gave you a memorable experience. What happened? And why was it memorable?
+S14_Q10,14,10,10,"You want to find a new house to move to. Call a real estate agency, and ask 3 or 4 questions about getting a house."
+S14_Q11,14,11,11,"You just moved in, but you found out that the window is broken. Call the repair shop, explain the situation. And also tell the person why you need to get it fixed as soon as possible."
+S14_Q12,14,12,12,"Have you ever broken something in your house? What was the situation, and how did you solve the problem?"
+S14_Q13,14,13,13,How have bars changed over the years? How bars and activities people do at bars change?
+S14_Q14,14,14,14,You may hear news about bars or pubs. Tell me about a media report about bars or pubs. Were the police involved? Tell me what happened in detail.
+S15_Q02,15,1,2,Tell me about some popular food or a dish in your country. Why is it popular and special?
+S15_Q03,15,2,3,What do you usually eat? Tell me about the food you typically eat.
+S15_Q04,15,3,4,"Have you ever had a memorable experience while you were eating something? What happened, and why was it so memorable to you?"
+S15_Q05,15,4,5,"What do you like most about your phone? For example, you like certain applications or the camera. Tell me what you like most about your phone and also why you like it."
+S15_Q06,15,5,6,Tell me about your first phone. How was it different from the phone you have now? Tell me about the differences between the phone you used back then and the one you use now.
+S15_Q07,15,6,7,"Have you ever had a problem while using your phone? What was the problem, and how did you deal with the situation?"
+S15_Q08,15,7,8,Please describe the park you often go to. Where is it located? What does it look like? What do people do there?
+S15_Q09,15,8,9,Tell me about the last time you went to the park. When was it? Who did you go with? And what did you do there?
+S15_Q10,15,9,10,"Tell me one memorable experience you had at a park. What happened, and why was it memorable?"
+S15_Q11,15,10,11,"(롤플1) I'd like to give you a situation and ask you to act it out. You want to drink coffee from a coffee shop that has recently opened. Call the coffee shop and ask three or four questions. For example, the menu they have and how to order coffee."
+S15_Q12,15,11,12,"(롤플2) I'm sorry, but there is a problem I need you to resolve. You just found out that you got the wrong coffee. Call the coffee shop, explain the situation, and suggest two or three solutions."
+S15_Q13,15,12,13,(롤플3) That's the end of the situation. Have you ever ordered something and there was something wrong with it? Tell me about the situation in detail.
+S15_Q14,15,13,14,How have Houses changed over the years. Talk to me about some changes in housing structures in your country.
+S15_Q15,15,14,15,What are some Problems that people go through when they rent a house or apartment. How do they deal with them?
+S16_Q02,16,1,2,"What kinds of healthy foods do people eat in your country? What are these foods, and where do people buy them?"
+S16_Q03,16,2,3,What do you do to stay healthy? Tell me about the things you do to maintain your health.
+S16_Q04,16,3,4,"How has the way people maintain their health changed? What did people do to stay healthy when you were a child, and what do they do now?"
+S16_Q05,16,4,5,You indicated in the survey that you go to coffee shops. Tell me about a coffee shop you like to visit. What is special about that café or coffee shop?
+S16_Q06,16,5,6,"What do you usually do when you’re at a coffee shop? Do you read, eat something, or have meetings?"
+S16_Q07,16,6,7,Share a memorable experience you had at a coffee shop. What happened? How did you deal with the situation?
+S16_Q08,16,7,8,You indicated in the survey that you like to listen to music. What kind of music do you listen to? Who is your favorite musician or composer?
+S16_Q09,16,8,9,"How did you first become interested in listening to music? What kinds of music did you like listening to, and how has your taste in music changed over time?"
+S16_Q10,16,9,10,Tell me about a time you listened to live music. Was it at a concert? Who did you go with? Was it memorable?
+S16_Q11,16,10,11,"You have an important meeting in two days, so you want to get a haircut. Call the hair salon and ask three or four questions to make an appointment no later than tomorrow afternoon."
+S16_Q12,16,11,12,"You just got your hair cut, but you are not happy with it. You think the haircut was done badly. Call the hair salon, explain the situation, and ask if there is a solution."
+S16_Q13,16,12,13,Do you have a memorable experience at a hair salon? What happened? What made it so memorable?
+S16_Q14,16,13,14,How do you deal with problems at home? How do your parents handle these kinds of problems? What are the differences between how you and your parents solve problems at home?
+S16_Q15,16,14,15,"What are some common problems people face when renting a home? Why do these problems occur, and how do people solve them?"
+S17_Q02,17,1,2,What do people typically do on the Internet? Do they watch videos or play games? Tell me about the things people do online.
+S17_Q03,17,2,3,"What do you usually do on the Internet? Do you like shopping, reading the news, or using social media? Tell me what you like to do online."
+S17_Q04,17,3,4,"When did you first start using the Internet, and what did you do on it? Tell me in detail about your first experience using the Internet."
+S17_Q05,17,4,5,"Tell me about your favorite beach. What does it look like? Where is it, and how often do you go there?"
+S17_Q06,17,5,6,"When you go to the beach, what do you usually do, and who do you usually go with?"
+S17_Q07,17,6,7,When was the last time you went to the beach? What did the beach look like? What did you do? Who did you go with?
+S17_Q08,17,7,8,"Let’s talk about where you live. Tell me about your home. What does it look like? How many rooms does it have? Also, tell me about your favorite room."
+S17_Q09,17,8,9,Tell me about the home you lived in as a child. How is it different from the home you live in now?
+S17_Q10,17,9,10,"Tell me about a change you’ve made to your home. Why did you make that change, and how do you feel about it?"
+S17_Q11,17,10,11,I'd like to give you a situation and ask you to act it out. You are going on vacation to another country. Call the hotel where you will be staying and ask about the weather there because you want to know what clothes to bring. Ask two or three more questions about your travel plans.
+S17_Q12,17,11,12,"I'm sorry, but there's a problem I need you to resolve. You have arrived in the country, but the clothes you brought don’t match the weather. Call a clothing store and explain your situation."
+S17_Q13,17,12,13,"That’s the end of the situation. Have you ever had trouble because of unexpected weather? What happened, who were you with, and how did you solve the problem?"
+S17_Q14,17,13,14,How has traveling abroad changed over the years? Is it easier or more difficult now compared to the past?
+S17_Q15,17,14,15,What are some important things people consider when traveling overseas? What are they typically interested in seeing or doing while traveling?
+S18_Q02,18,1,2,Let’s talk about recycling. How do people recycle? What types of things do they recycle?
+S18_Q03,18,2,3,How do you recycle in your daily life? What types of things do you typically recycle?
+S18_Q04,18,3,4,"I'd like to know how people recycled when you were a child. How did they recycle, and what did they recycle? Where did they put recyclables?"
+S18_Q05,18,4,5,"In the survey, you indicated that you travel domestically. Tell me about a city or place you enjoy visiting. What do you like about it?"
+S18_Q06,18,5,6,What do you usually prepare before a trip? Please list everything you prepare.
+S18_Q07,18,6,7,"Tell me about a trip you took when you were a child. Where did you go, who did you go with, and what did you do?"
+S18_Q08,18,7,8,"What do you like about your phone? Is there a specific feature you enjoy, such as the camera or a particular app? Also, explain why you like that feature."
+S18_Q09,18,8,9,Tell me about your first phone. How is it different from your current one?
+S18_Q10,18,9,10,"Have you ever had any problems with your phone, such as poor connectivity or battery issues? Tell me about a time when you had trouble using it."
+S18_Q11,18,10,11,I'd like to give you a situation and ask you to act it out. Your friend has invited you to the park this weekend. Call your friend and ask three or four questions about going to the park
+S18_Q12,18,11,12,"I’m sorry, but there’s a problem I need you to resolve. You were supposed to go to a park with your friend this weekend, but you just found out that the park will be closed for renovations. Call your friend to explain the situation and suggest alternative plans."
+S18_Q13,18,12,13,That’s the end of the situation. Have you ever had a memorable experience at a park? What happened? Was it a good or bad experience? Why was it so memorable?
+S18_Q14,18,13,14,"In the background survey, you mentioned that you like to listen to music. Choose two different kinds of music or two composers and compare them in detail. What are their similarities and differences?"
+S18_Q15,18,14,15,"Can you tell me about some electronic gadgets or equipment related to music that people are interested in these days? What makes them special, and why are they so popular?"
+S19_Q02,19,1,2,"You indicated in the survey that you listen to music. What kind of music do you listen to, and who is your favorite musician or composer?"
+S19_Q03,19,2,3,"When and where do you usually listen to music? Do you listen to the radio, or do you go to concerts?"
+S19_Q04,19,3,4,"How did you first become interested in music? What kinds of music did you listen to in the past, and how has your taste in music changed over the years?"
+S19_Q05,19,4,5,"Describe transportation in your country. How do people usually get around, and what modes of transportation are available?"
+S19_Q06,19,5,6,"How do you get around? What types of transportation do you use? Do you drive, or do you use public transportation?"
+S19_Q07,19,6,7,What means of transportation did you use when you were a child? How did people get around in your city back then?
+S19_Q08,19,7,8,"You indicated in the survey that you take vacations internationally. Tell me about a city or country you’ve visited. What was it like, and what were the people like?"
+S19_Q09,19,8,9,"Tell me about your first trip abroad—when and where did you go, who did you travel with, and what did you do?"
+S19_Q10,19,9,10,"Have you had an unforgettable experience while traveling? What happened, and what made it so memorable?"
+S19_Q11,19,10,11,I'd like to give you a situation and ask you to act it out. You are driving through a small town and have car trouble. Go to a service station for help. Ask three or four questions to get the information you need to get your car fixed.
+S19_Q12,19,11,12,"I’m sorry, but there’s a problem I need you to resolve. You will miss an important business meeting because of your car trouble. Call your client. Explain the situation and offer some possible solutions."
+S19_Q13,19,12,13,"That’s the end of the situation. Tell me about a time when you had trouble with your car. What was the problem, and how did you solve it?"
+S19_Q14,19,13,14,How have the reasons for visiting coffee shops changed over the years? What do people usually do at coffee shops? Why do people go to coffee shops other than just drinking coffee?
+S19_Q15,19,14,15,Coffee shops and coffee houses are popular all around the world. Why have they become so popular? What role do they play in people’s daily lives?
+S20_Q02,20,1,2,"Let's talk about where you live. Could you describe your home? What does it look like, and how many rooms does it have?"
+S20_Q03,20,2,3,What do you usually do at home? How does your routine differ on weekdays compared to weekends? Tell me about your typical day.
+S20_Q04,20,3,4,Tell me about the home you lived in as a child. How is it different from the home you live in now?
+S20_Q05,20,4,5,You indicated in the survey that you go to the movies. What kinds of movies do you like to watch? Why do you like those movies?
+S20_Q06,20,5,6,Tell me about the last time you went to the movies. What did you do before and after the movie?
+S20_Q07,20,6,7,Share a story about an actor or actress you saw in the news. What was the news about? Was it interesting? Tell me the details of what happened.
+S20_Q08,20,7,8,Tell me about the gatherings and celebrations where you live. What are they like?
+S20_Q09,20,8,9,Can you tell me about a gathering or a celebration that you attended? Where was it held? What did you do? Who did you meet there?
+S20_Q10,20,9,10,You might experience something unexpected at a gathering or a celebration. Do you have a memorable experience from a gathering or celebration? What happened?
+S20_Q11,20,10,11,"I'd like to give you a situation and ask you to act it out. You are at the airport and just found out that your flight is delayed by two hours. At the airline counter, ask three or four questions about the delay."
+S20_Q12,20,11,12,"I'm sorry, but there's a problem I need you to resolve. Your flight was delayed, so you can't attend an important meeting today. Call your client and leave a message about the situation. Suggest two or three alternative options."
+S20_Q13,20,12,13,"That's the end of the situation. You may have had problems while you were on a trip. Talk about a problem you had while traveling. What was the problem, and how did you deal with the situation?"
+S20_Q14,20,13,14,Many restaurants are changing their menus to appeal to health-conscious customers. Tell me about some of the changes restaurants are making.
+S20_Q15,20,14,15,"You know what to expect from menus in chain restaurants, but small local independent restaurants have their own unique menus. Tell me about your experience at a chain restaurant and a local independent restaurant."
+S21_Q02,21,1,2,"You indicated in the survey that you take vacations internationally. Tell me about a city or country you’ve visited. What was it like, and what were the people like?"
+S21_Q03,21,2,3,What do you usually do when you travel abroad? Tell me about some activities you enjoy doing when visiting another country.
+S21_Q04,21,3,4,"Tell me about your first trip abroad—when and where did you go, who did you travel with, and what did you do?"
+S21_Q05,21,4,5,Tell me about your favorite piece of furniture in your home. Why do you like that piece of furniture?
+S21_Q06,21,5,6,Tell me about the furniture you had when you were a child. How is it different from the furniture you have now?
+S21_Q07,21,6,7,"Have you ever had a problem with furniture? For example, it broke, got stained, or ripped? What was the problem and how did you handle the situation?"
+S21_Q08,21,7,8,You indicated in the survey that you go to coffee shops. Tell me about a coffee shop you like to go to. What is special about that cafe or coffee shop?
+S21_Q09,21,8,9,Tell me about the last time you went to a coffee shop. Where did you go? Who did you go with? What did you do there?
+S21_Q10,21,9,10,Share a memorable experience you had at a coffee shop. What happened? How did you deal with the situation?
+S21_Q11,21,10,11,"I'd like to give you a situation and ask you to act it out. You are planning to join a new gym. Call the gym, ask three or four questions about what they have available, and find out whether they meet your needs."
+S21_Q12,21,11,12,"I'm sorry, but there's a problem I need you to resolve. When you first visit the gym, it isn't what you expected. Call the manager, tell them your concerns, and then ask for a full refund."
+S21_Q13,21,12,13,"That's the end of the situation. Staying healthy can be difficult. Tell me about a challenge you faced with your health. For example, tell me about a time when you tried to go on a diet or quit smoking."
+S21_Q14,21,13,14,How did people use phones five years ago? What phone functions and applications were available? What are some of the biggest changes in how people use their phones today?
+S21_Q15,21,14,15,There is a concern that young people spend too much time on their phones and are not developing face-to-face communication skills. What do most people in your country think about the way young people use their phones?
+S22_Q02,22,1,2,"What kinds of appointments do you usually make, and how do you arrange or schedule them?"
+S22_Q03,22,2,3,Can you tell me about an appointment you had when you were a child? Maybe it was a doctor’s or dentist’s appointment. Tell me about your experience with an appointment from your childhood.
+S22_Q04,22,3,4,"Do you have a memorable experience related to an appointment? Was it interesting or surprising? What happened, and what made it so memorable for you?"
+S22_Q05,22,4,5,Can you tell me about one of your friends or a family member? What is he or she like?
+S22_Q06,22,5,6,What do you usually do when you spend time with your friends or family? What activities do you like to do with them?
+S22_Q07,22,6,7,"Can you describe the last time you spent time with a friend or family member? When was it? Who did you meet, and what did you do?"
+S22_Q08,22,7,8,You indicated in the survey that you go to parks. Tell me about a park you like to visit. What is it like? What do people do at the park?
+S22_Q09,22,8,9,When did you first start visiting parks? How did you become interested in going to parks? What made you go?
+S22_Q10,22,9,10,Can you tell me about a memorable experience you had at a park? Was it interesting? Tell me what happened in detail.
+S22_Q11,22,10,11,"I'd like to give you a situation and ask you to act it out. You are planning a vacation with a friend. Call a travel agency, explain the vacation you and your friend would like, and ask three or four questions about how to plan the trip."
+S22_Q12,22,11,12,"I'm sorry, but there's a problem that I need you to resolve. You bought a non-refundable plane ticket, but you can't travel because something came up. Call the travel agent, explain the situation, and suggest some alternative solutions."
+S22_Q13,22,12,13,That's the end of the situation. Have you ever had trouble making vacation plans? Talk about what happened and how you solved the problem.
+S22_Q14,22,13,14,Many homes nowadays have new appliances or electronic devices that make life more convenient. Tell me about some new home appliances or electronic devices. How have they changed households?
+S22_Q15,22,14,15,Tell me about a modern household appliance or device that people find useful or convenient. What do people think about this home appliance or device?
+S23_Q02,23,1,2,You mentioned in the survey that you go to the movies. What kinds of movies do you like to watch? Why do you enjoy those kinds of movies?
+S23_Q03,23,2,3,Tell me about a memorable movie you have watched. What was it about? What made it special?
+S23_Q04,23,3,4,Can you tell me about an actor or actress you recently saw in the news? What was the news about? Did you find it interesting?
+S23_Q05,23,4,5,Tell me about the restaurants in your country. What are they like?
+S23_Q06,23,5,6,What do you usually do when you go to a restaurant? What steps do you take when you eat out?
+S23_Q07,23,6,7,Can you tell me about a time you ate at a restaurant when you were a child? Where did you go? What was the restaurant like? Who did you go with? Was the experience special to you?
+S23_Q08,23,7,8,"What kinds of technology are commonly used in your country? Tell me about some of the technology people use, such as phones and computers."
+S23_Q09,23,8,9,You may have noticed that technology has changed over the years. What was technology like when you were a child? How has it changed since then?
+S23_Q10,23,9,10,Have you ever had problems dealing with technology? Maybe one of your devices stopped working or broke. Tell me about one of your experiences. How did you solve the problem?
+S23_Q11,23,10,11,"I'd like to give you a situation and ask you to act it out. You are visiting New York on vacation, and you want to rent a car from an agency. Ask the agent three or four questions about renting a car for a week."
+S23_Q12,23,11,12,"I'm sorry, but there's a problem that I need you to resolve. The agency isn't sure they can rent you a car because you have a non-US driver's license. Explain what kind of license you have and why it is valid for renting a car."
+S23_Q13,23,12,13,"That's the end of the situation. Tell me about an interesting experience that you had while you were on vacation. Why was it memorable? Was it a positive or negative experience? Tell me when and where it happened, and who you were with."
+S23_Q14,23,13,14,Tell me about some holidays in your country. What do people do on those holidays? How do they celebrate them?
+S23_Q15,23,14,15,"Talk about some issues or concerns people have about holidays. Why do people have concerns about them, and how do they deal with them?"
+S24_Q02,24,1,2,Tell me about the banks in your country. What are they like? Where are they typically located?
+S24_Q03,24,2,3,What do you usually do when you go to the bank? Tell me about the kinds of things you do there.
+S24_Q04,24,3,4,"How have banks in your country changed over time? What were banks like when you were a child, and how are they different now?"
+S24_Q05,24,4,5,"Where do people in your country usually go in their free time, and what do they like to do there?"
+S24_Q06,24,5,6,How did you spend your free time in the past? How has the way you spend your free time changed over the years?
+S24_Q07,24,6,7,Can you tell me about the last time you had some free time? What did you do? Where did you go? Who did you spend time with?
+S24_Q08,24,7,8,You indicated in the survey that you take vacations domestically. Tell me about some of the cities or places you like to visit. Why do you enjoy going there?
+S24_Q09,24,8,9,Tell me about a trip you took when you were a child. Where did you go? Who did you go with? What did you do?
+S24_Q10,24,9,10,You may have experienced something unexpected while traveling. Tell me about an unforgettable experience you had during a trip. What happened? What made it so memorable?
+S24_Q11,24,10,11,"I'd like to give you a situation and ask you to act it out. Your friend invited you to a holiday party at their home. Call them and ask when the party is and what time it starts, and if you should bring anything. Ask two or three more questions about the party."
+S24_Q12,24,11,12,"I'm sorry, but there is a problem that I need you to resolve. You just had a car accident and are going to be late for the holiday party. Call your friend, let them know what happened, and discuss two or three ideas about what you should do."
+S24_Q13,24,12,13,That's the end of the situation. Have you ever been in a situation where you made plans for a trip or a party but had to cancel at the last minute because of an emergency? Talk about the situation and how you dealt with it.
+S24_Q14,24,13,14,I'd like to talk about where you live. How has the style of homes where you live changed over the past five or ten years? Are the homes being built today different from the homes built 10 years ago? What developments or changes have you noticed?
+S24_Q15,24,14,15,"Sometimes, the issue of having too many new homes or not enough new homes can create controversy in a community. Think of a time when a housing issue was in the news in your area. What was the issue, and why were people talking about it?"
+S25_Q02,25,1,2,Can you tell me about some companies that young people want to work for? Why do they want to work at these companies?
+S25_Q03,25,2,3,Tell me about a rising company or industry in your country. Why is it growing? How has this company or industry achieved success?
+S25_Q04,25,3,4,What have you done for your career? What efforts have you made to get your job or improve your work skills?
+S25_Q05,25,4,5,You indicated in the survey that you like to listen to music. What kind of music do you listen to? Who is your favorite musician or composer?
+S25_Q06,25,5,6,"How did you first become interested in listening to music? What kinds of music did you like listening to in the past, and how has your taste in music changed over time?"
+S25_Q07,25,6,7,Tell me about a time you listened to live music. Was it at a concert? Who did you go with? Was it memorable?
+S25_Q08,25,7,8,Tell me about the hotels in your country. What are they like? Where are they usually located?
+S25_Q09,25,8,9,"Can you tell me about a memorable hotel experience? What was the hotel called, and where was it? What was the place like? Why do you remember that hotel?"
+S25_Q10,25,9,10,When was the last time you stayed in a hotel? Where was it? Why did you go there? Tell me in detail what you did at the hotel.
+S25_Q11,25,10,11,I'd like to give you a situation and ask you to act it out. You just moved into a new apartment and you are wondering about recycling. Call the management office and ask three or four questions about how to recycle.
+S25_Q12,25,11,12,"I'm sorry, but there's a problem I need you to resolve. Your new neighbor from abroad put garbage in the recycling bin, and tenants are complaining about it. Talk to your neighbor and explain how to recycle properly."
+S25_Q13,25,12,13,That's the end of the situation. Tell me how people recycled when you were a child. Was there a place for recycling? How was recycling in the past different from how we recycle now?
+S25_Q14,25,13,14,You indicated in the survey that you take vacations domestically. A lot of people say that traveling has become more difficult in the past five years. Can you tell me what kinds of changes you have noticed in traveling? How have these changes affected travelers?
+S25_Q15,25,14,15,What are the main issues or concerns when people talk about traveling? What are the causes of these concerns? How do people deal with them?
+S26_Q02,26,1,2,"Tell me about your favorite beach. What does it look like? Where is it, and how often do you go there?"
+S26_Q03,26,2,3,"When you go to the beach, what do you usually do, and who do you usually go with?"
+S26_Q04,26,3,4,When was the last time you went to the beach? What did the beach look like? What did you do? Who did you go with?
+S26_Q05,26,4,5,I’d like to talk about where you live. Tell me about your home. What does it look like? How many rooms does it have?
+S26_Q06,26,5,6,"Can you tell me about some problems you have had in your home? For example, something broke or someone you lived with didn’t cooperate with you."
+S26_Q07,26,6,7,"Pick one of the problems you mentioned above and describe it in detail. What was the problem? What caused it, and how did you handle it?"
+S26_Q08,26,7,8,"Tell me about your favorite takeout or delivery restaurant. What kind of food do they offer? What is the place like, and why do you like it?"
+S26_Q09,26,8,9,"Tell me about the last time you ordered food from a takeout or delivery restaurant. What did you order, and how was the experience?"
+S26_Q10,26,9,10,"Tell me about a special time when you got food from a takeout or delivery restaurant, such as for a party. What was the occasion? How did you get the food? Was it a memorable experience?"
+S26_Q11,26,10,11,I'd like to give you a situation and ask you to act it out. A new health food store recently opened near your home. Call the store and ask three or four questions to learn more about what they offer.
+S26_Q12,26,11,12,"I'm sorry, but there's a problem I need you to resolve. You bought something at the store, but you just found a problem with it. Call the store, tell them about the issue, and discuss a solution."
+S26_Q13,26,12,13,That's the end of the situation. Can you tell me about a memorable meal you had with your friends or colleagues? What did you eat? Who were you with? Where did you eat? What made it memorable?
+S26_Q14,26,13,14,"Tell me about a change in the relationship between your country and another country. It could be related to politics, the economy, sports, or culture."
+S26_Q15,26,14,15,"Can you talk about a historic event that changed the relationship between your country and a neighboring country? For example, a treaty between the two countries, a cultural event, or the visit of a leader from another country."
+S27_Q02,27,1,2,You indicated in the survey that you take vacations domestically. Tell me about a city or place you like to travel to. Why do you like going there?
+S27_Q03,27,2,3,What do you usually do to prepare before going on a trip? What are the things you do to get ready for a trip?
+S27_Q04,27,3,4,A lot of unexpected things can happen when we travel. Tell me about an unforgettable experience you’ve had while traveling. What happened? What made it so memorable for you?
+S27_Q05,27,4,5,"Let’s talk about fashion. What kinds of clothes do people typically wear in your country? What do they usually wear at work, and what do they wear at home?"
+S27_Q06,27,5,6,What kind of clothes do you usually like to wear? What are you wearing right now? Tell me about your fashion style.
+S27_Q07,27,6,7,How have fashion and clothing changed over time? What kinds of clothes were popular when you were child? How is fashion different now compared to the past?
+S27_Q08,27,7,8,You indicated in the survey that you like listening to music. What kind of music do you listen to? Who are some of your favorite musicians or composers?
+S27_Q09,27,8,9,"When did you first become interested in music? What kind of music did you first enjoy listening to, and how has your taste in music changed over the years?"
+S27_Q10,27,9,10,Can you tell me about a time when you listened to live music? When was it? Who were you with? What was the occasion? Was it memorable?
+S27_Q11,27,10,11,I'd like to give you a situation and ask you to act it out. You are visiting a new city and staying at a hotel. You have a free day and want to explore the city. Ask the front desk clerk three or four questions about activities or places to visit.
+S27_Q12,27,11,12,"I'm sorry, but there’s a problem I need you to resolve. You left your bag in the taxi that took you to the hotel. Call the taxi company, explain the situation, describe your bag, and arrange to get it back."
+S27_Q13,27,12,13,"That's the end of the situation. Has anything similar ever happened to you? Have you ever lost an item somewhere, or misplaced something important? Talk about the situation in detail."
+S27_Q14,27,13,14,"How do people prepare for work in your country's industries? Do they study for the job in advance, or are they trained when they join the company? Do they get job training? How has job training changed over the past five years?"
+S27_Q15,27,14,15,"What is an industry or a company that people in your country are talking about these days? Why are people interested in this field, and what are they saying about it?"
+S28_Q02,28,1,2,Tell me about the seasons in your country. What is the weather like in each season?
+S28_Q03,28,2,3,What is the weather like where you are today? What is happening with the weather right now?
+S28_Q04,28,3,4,"How has the weather changed over the years? What was the weather like when you were a child, and how is it different from the weather now?"
+S28_Q05,28,4,5,"I’d like to talk about where you live. Can you describe your home? What does it look like, and how many rooms does it have?"
+S28_Q06,28,5,6,"What do you do when you are at home? What do you usually do on weekdays, and what do you usually do on weekends?"
+S28_Q07,28,6,7,"Tell me about some problems or issues you’ve had in your home. Maybe something broke, or someone you lived with didn’t cooperate with you. Explain those problems in detail."
+S28_Q08,28,7,8,"You indicated in the survey that you take vacations internationally. Tell me about a place that people in your country like to visit when traveling abroad. Where is it, and why is it popular?"
+S28_Q09,28,8,9,"Tell me about a trip you took when you were a child. What country did you visit, and what was your impression of that place?"
+S28_Q10,28,9,10,"Unexpected or unusual things can happen when we travel overseas. Have you ever had an unforgettable experience while traveling? What happened, and what made it so memorable?"
+S28_Q11,28,10,11,"I'd like to give you a situation and ask you to act it out. You have a job interview at a major company, and you want to learn more about the company before the interview. Call the company and ask three or four questions about it."
+S28_Q12,28,11,12,"I'm sorry, but there is a problem I need you to resolve. Something has come up, and you cannot go to the interview. Call the company, explain the situation, and offer two or three suggestions, so you won't lose the opportunity."
+S28_Q13,28,12,13,"That's the end of the situation. Have you ever been in a situation where you had to cancel an important appointment or plan? What happened? When was it, and how did you resolve it?"
+S28_Q14,28,13,14,How are gatherings and celebrations in small towns different from those in big cities? Compare celebrations in small towns with those in big cities in your country. How are they different?
+S28_Q15,28,14,15,It’s sometimes difficult to plan gatherings. Tell me about some challenges related to making plans for gatherings. How do people deal with these problems?
+S29_Q02,29,1,2,I’d like to talk about where you live. Tell me about your favorite room in your home. What does it look like? Why do you like that room?
+S29_Q03,29,2,3,Tell me about some housework you do at home. What do you do to keep your house nice and clean?
+S29_Q04,29,3,4,Tell me about the home you lived in as a child. How was it different from the home you live in now?
+S29_Q05,29,4,5,"Tell me about the geography of your country. Are there many mountains, rivers, or lakes?"
+S29_Q06,29,5,6,"Tell me about a special place you visited as a child. Maybe it had a unique geographical landmark or feature. What did you see, and what was your impression of that place?"
+S29_Q07,29,6,7,Can you tell me about your experience visiting a natural place in your country? What activities did you do there? Did you go hiking or enjoy the beach?
+S29_Q08,29,7,8,Can you tell me about a healthy person you know? What is he or she like? Why do you think that person is healthy?
+S29_Q09,29,8,9,"Have you ever done something to stay healthy, such as eating healthy food or working out? What did you do, and how did you feel after trying it?"
+S29_Q10,29,9,10,"You might have tried to improve your health, like quitting smoking or drinking. Perhaps you signed up for an exercise program. What did you try, and what was your reason for doing it?"
+S29_Q11,29,10,11,"I'd like to give you a situation and ask you to act it out. You would like to buy a new mobile phone. Call a store and tell them what you need, then ask three or four questions to find out about the phones they offer."
+S29_Q12,29,11,12,"I'm sorry, but there's a problem that I need you to resolve. When you bought the new phone, you realized that it did not have all the features you need. You would like to return it to get a new phone. Call the store, explain the situation, and make arrangements to exchange it for one that has the features you need."
+S29_Q13,29,12,13,That's the end of the situation. Have you ever bought a piece of technology which was not what you wanted or different from what you had expected? Was the feature not what you wanted or did it just not work properly? Tell me exactly what was wrong and what you did to solve the situation.
+S29_Q14,29,13,14,"A lot of fast-food, take-out, or delivery restaurants are offering healthy choices these days. Why do you think these kinds of restaurants have made such changes?"
+S29_Q15,29,14,15,Tell me about the latest trends related to take-out or delivery food options. What recent changes have you noticed regarding takeout or delivery food?
+S30_Q02,30,1,2,"You indicated in the survey that you listen to music. What kind of music do you listen to, and who are some of your favorite musicians or composers?"
+S30_Q03,30,2,3,"When and where do you usually listen to music? Do you listen to the radio, or do you go to concerts?"
+S30_Q04,30,3,4,"When did you first become interested in music? What kind of music did you first listen to, and how has your taste in music changed over time?"
+S30_Q05,30,4,5,You indicated in the survey that you go to parks. Tell me about a park you like to visit. What is it like? What do people usually do there?
+S30_Q06,30,5,6,What do you usually do at the park? What activities do you enjoy? Describe a typical day at the park from beginning to end.
+S30_Q07,30,6,7,Can you tell me about a memorable experience you had at a park? Was it interesting? Tell me what happened in detail.
+S30_Q08,30,7,8,Tell me about your country’s holidays. Where do people usually celebrate those holidays? How do they celebrate them?
+S30_Q09,30,8,9,"Tell me about a holiday you celebrated as a child. Where did you go, what did you do, and what are your memories of that holiday?"
+S30_Q10,30,9,10,"What did you do on your last holiday? Who did you spend it with, and what activities did you do? Was it memorable for you?"
+S30_Q11,30,10,11,I'd like to give you a situation and ask you to act it out. You are writing a report on the technology industry. Your friend is an expert in this field. Call your friend and ask three or four questions to learn more about the technology industry.
+S30_Q12,30,11,12,"I'm sorry, but there's a problem I need you to resolve. You have an appointment to meet your friend to learn more about the industry they work in. However, a few days before the meeting, a family member has an emergency. Call your friend, explain the situation, and suggest two or three alternatives to get the information."
+S30_Q13,30,12,13,"That’s the end of the situation. Talk about an exciting new product you have heard of. For example, it could be a phone, car, video game, or some other product. How did you learn about it? Tell me about the product in detail."
+S30_Q14,30,13,14,How has the way people buy food changed over the years? Where did people usually buy food in the past? Where do they usually buy it now?
+S30_Q15,30,14,15,Food can get contaminated by bacteria. Food can go bad or become toxic. Tell me about something you heard on the news about this issue.
