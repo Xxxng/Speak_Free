@@ -101,10 +101,17 @@
   populateDropdowns();
   applyFilters();
   setupEventListeners();
+  initServerSync();
+  window.addEventListener('speakfree:examchange', () => {
+    resetTimer();
+    if (isRecording && mediaRecorder) mediaRecorder.stop();
+  });
 
   /**
-   * Load and Save LocalStorage
+   * Load and Save LocalStorage & Server File Persistence
    */
+  let saveToServerTimeout = null;
+
   function loadUserNotes() {
     try {
       const data = localStorage.getItem(STORAGE_KEY);
@@ -115,13 +122,59 @@
     }
   }
 
-  function saveUserNotes() {
+  function saveUserNotes(immediate = false) {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(userNotes));
       updateProgress();
       updateStatusBadge();
+
+      if (immediate) {
+        saveNotesToServer();
+      } else {
+        debouncedSaveToServer();
+      }
     } catch (e) {
       console.error('Failed to save notes to localStorage', e);
+    }
+  }
+
+  function debouncedSaveToServer() {
+    if (saveToServerTimeout) {
+      clearTimeout(saveToServerTimeout);
+    }
+    saveToServerTimeout = setTimeout(() => {
+      saveNotesToServer();
+    }, 400);
+  }
+
+  async function saveNotesToServer() {
+    try {
+      const res = await fetch('/api/notes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(userNotes)
+      });
+      if (!res.ok) {
+        console.warn('Server auto-save status:', res.status);
+      }
+    } catch (e) {
+      // Server offline or static file mode; localStorage acts as backup
+    }
+  }
+
+  async function initServerSync() {
+    try {
+      const res = await fetch('/api/notes');
+      if (res.ok) {
+        const serverNotes = await res.json();
+        if (serverNotes && typeof serverNotes === 'object' && Object.keys(serverNotes).length > 0) {
+          userNotes = Object.assign({}, userNotes, serverNotes);
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(userNotes));
+          applyFilters();
+        }
+      }
+    } catch (e) {
+      console.log('Server API sync unavailable, using localStorage data.');
     }
   }
 
@@ -620,7 +673,7 @@
         const data = JSON.parse(event.target.result);
         if (data && data.userNotes) {
           userNotes = Object.assign({}, userNotes, data.userNotes);
-          saveUserNotes();
+          saveUserNotes(true);
           applyFilters();
           alert('데이터를 성공적으로 복원했습니다!');
           exportModal.classList.remove('open');
@@ -801,7 +854,7 @@
     resetAllDataBtn.addEventListener('click', () => {
       if (confirm('정말로 작성한 모든 메모와 스크립트를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.')) {
         userNotes = {};
-        saveUserNotes();
+        saveUserNotes(true);
         applyFilters();
         alert('모든 데이터가 초기화되었습니다.');
         exportModal.classList.remove('open');
@@ -820,6 +873,7 @@
    * Addresses user requirement: "다음 화살표 키를 누르면 빠르게 질문 전환"
    */
   function handleGlobalShortcuts(e) {
+    if (document.body.dataset.exam === 'toeic') return;
     const activeEl = document.activeElement;
     const isEditing = activeEl && (activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'INPUT');
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpeakFree - 오픽 & 면접 즉흥 메모 및 스피킹 트레이너</title>
+  <title>SpeakFree - 오픽 & 토익스피킹 트레이너</title>
   <meta name="description" content="오픽 및 면접 질문을 보고 즉흥으로 키워드를 떠올려 기록하고 정밀 스크립트로 보완하는 빠른 질문 네비게이션 훈련 도구">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,15 @@
         <div class="brand-logo">⚡</div>
         <div class="brand-title-wrap">
           <h1>SpeakFree</h1>
-          <span class="brand-subtitle">OPIc & Interview Rapid Thinker</span>
+          <span class="brand-subtitle">OPIc · TOEIC Speaking</span>
         </div>
       </div>
 
-      <div class="header-controls">
+      <nav class="exam-switch" aria-label="시험 선택">
+        <button id="opicTab" class="btn btn-ghost" aria-pressed="true">오픽 · 질문 연습</button>
+        <button id="toeicTab" class="btn btn-ghost" aria-pressed="false">토익스피킹 · 학습</button>
+      </nav>
+      <div class="header-controls" id="opicControls">
         <!-- Set Selector -->
         <div class="select-wrapper">
           <select id="setSelect" class="select-input" title="질문 세트 선택">
@@ -75,7 +79,7 @@
     </header>
 
     <!-- Progress Strip -->
-    <div class="progress-strip">
+    <div class="progress-strip" id="opicProgress">
       <div id="progressText">진행률 계산 중...</div>
       <div class="progress-track">
         <div id="progressBar" class="progress-fill"></div>
@@ -84,7 +88,7 @@
     </div>
 
     <!-- Main Workspace -->
-    <main class="main-content">
+    <main class="main-content" id="opicWorkspace">
       <!-- Left: Question & Audio Simulation Card -->
       <section class="question-card" id="questionCard">
         <div>
@@ -236,7 +240,7 @@
     </main>
 
     <!-- Bottom Status & Keyboard Shortcut Bar -->
-    <footer class="bottom-bar">
+    <footer class="bottom-bar" id="opicFooter">
       <div class="shortcut-list">
         <div class="shortcut-item">
           <span class="kbd-hint">Alt + →</span>
@@ -360,5 +364,11 @@
   <!-- Scripts -->
   <script src="questions.js"></script>
   <script src="app.js"></script>
+  <script src="toeic-data.js"></script>
+  <script src="toeic-templates-data.js"></script>
+  <script src="toeic.js"></script>
+  <script src="toeic-templates.js"></script>
+  <script src="toeic-sentences-data.js"></script>
+  <script src="toeic-sentences.js"></script>
 </body>
 </html>
