@@ -2,3 +2,7 @@ user_notes.json
 toeic-*-preview.png
 tmp/
 __pycache__/
+
+toeic_records.json
+toeic_records.json.tmp
+universal-templates-preview.png

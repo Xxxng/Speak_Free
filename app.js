@@ -480,25 +480,15 @@
       return;
     }
 
-    window.speechSynthesis.cancel(); // Cancel any ongoing speech
+    window.SpeakFreeSpeech.cancel();
 
     const text = filteredQuestions[currentIndex].text;
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = parseFloat(ttsRate.value) || 1.0;
-
-    // Try finding a natural English voice
-    const voices = window.speechSynthesis.getVoices();
-    const englishVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha')));
-    if (englishVoice) {
-      utterance.voice = englishVoice;
-    }
-
     ttsBtn.classList.add('playing');
-    utterance.onend = () => ttsBtn.classList.remove('playing');
-    utterance.onerror = () => ttsBtn.classList.remove('playing');
-
-    window.speechSynthesis.speak(utterance);
+    window.SpeakFreeSpeech.speak(text, {
+      rate: parseFloat(ttsRate.value) || 1.0,
+      onend: () => ttsBtn.classList.remove('playing'),
+      onerror: () => ttsBtn.classList.remove('playing')
+    });
   }
 
   /**

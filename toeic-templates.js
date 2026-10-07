@@ -1,5 +1,6 @@
-(function () {
+(async function () {
   'use strict';
+  await window.SpeakFreeRecords.ready;
   const KEY='speakfree_toeic_custom_templates_v1', $=id=>document.getElementById(id);
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const copy=v=>JSON.parse(JSON.stringify(v));
@@ -25,10 +26,11 @@
   try {const raw=localStorage.getItem(KEY);if(raw)state=valid(JSON.parse(raw));}catch(_){}
   let part=document.querySelector('#tsParts [aria-pressed="true"]')?.dataset.part||'2',id='',stage='learn',revealed=false,review=false,editing=null,undo=null;
   const panel=document.createElement('section');panel.id='tsTemplatesPanel';
-  panel.innerHTML=`<div class="tt-intro tt-editor-toolbar"><div><h3>내 템플릿</h3><p id="ttTotal"></p></div><button id="ttNew" class="btn btn-primary">＋ 새 템플릿</button></div><section id="ttEditor" class="ts-card" hidden></section><div id="ttLearning" class="ts-layout"><section><div id="ttStages" class="ts-modes"><button data-stage="learn">① 구조 익히기</button><button data-stage="build">② 내 답변 만들기</button><button data-stage="recall">③ 가리고 말하기</button></div><p id="ttProgress" class="ts-progress"></p><article id="ttCard" class="ts-card"></article><div class="ts-navigation"><button id="ttPrev" class="btn btn-ghost">← 이전</button><button id="ttNext" class="btn btn-primary">다음 →</button></div></section><aside class="ts-sidebar"><div class="ts-side-title"><h3>템플릿 목록</h3><span id="ttCount"></span></div><label class="tt-review"><input id="ttReview" type="checkbox"> 헷갈리는 유형만 복습</label><div id="ttList" class="ts-list"></div><div class="ts-backup"><button id="ttExport" class="btn btn-ghost">템플릿·기록 백업</button><label class="btn btn-ghost">복원<input id="ttImport" type="file" accept=".json" hidden></label></div></aside></div><p id="ttStatus" class="ts-small" role="status">템플릿을 저장하면 이 브라우저에 보관됩니다.</p><button id="ttUndo" class="btn btn-ghost" hidden>삭제 취소</button>`;
+  panel.innerHTML=`<div class="tt-intro tt-editor-toolbar"><div><h3>내 템플릿</h3><p id="ttTotal"></p></div><button id="ttNew" class="btn btn-primary">＋ 새 템플릿</button></div><section id="ttEditor" class="ts-card" hidden></section><div id="ttLearning" class="ts-layout"><section><div id="ttStages" class="ts-modes"><button data-stage="learn">① 구조 익히기</button><button data-stage="build">② 내 답변 만들기</button><button data-stage="recall">③ 가리고 말하기</button></div><p id="ttProgress" class="ts-progress"></p><article id="ttCard" class="ts-card"></article><div class="ts-navigation"><button id="ttPrev" class="btn btn-ghost">← 이전</button><button id="ttNext" class="btn btn-primary">다음 →</button></div></section><aside class="ts-sidebar"><div class="ts-side-title"><h3>템플릿 목록</h3><span id="ttCount"></span></div><label class="tt-review"><input id="ttReview" type="checkbox"> 헷갈리는 유형만 복습</label><div id="ttList" class="ts-list"></div><div class="ts-backup"><button id="ttExport" class="btn btn-ghost">템플릿·기록 백업</button><label class="btn btn-ghost">복원<input id="ttImport" type="file" accept=".json" hidden></label></div></aside></div><p id="ttStatus" class="ts-small" role="status">템플릿과 학습 기록을 자동 저장합니다.</p><button id="ttUndo" class="btn btn-ghost" hidden>삭제 취소</button>`;
   $('tsParts').after(panel);
-  const stop=()=>{if('speechSynthesis'in window)window.speechSynthesis.cancel();};
-  function persist(next){try{localStorage.setItem(KEY,JSON.stringify(next));state=next;return true;}catch(_){$('ttStatus').textContent='저장 공간이 부족하거나 저장할 수 없습니다. 편집 내용은 그대로 두었으니 백업 또는 내용을 복사하세요.';return false;}}
+  panel.insertAdjacentHTML('beforeend', '<p id="ttDiskStatus" class="ts-small" role="status">컴퓨터 파일에 자동 저장합니다.</p>');
+  const stop=()=>{window.SpeakFreeSpeech.cancel();};
+  function persist(next){try{window.SpeakFreeRecords.save(KEY,next);state=next;return true;}catch(_){$('ttStatus').textContent='저장 공간이 부족하거나 저장할 수 없습니다. 편집 내용은 그대로 두었으니 백업 또는 내용을 복사하세요.';return false;}}
   function slots(t){return [...new Set(t.steps.flatMap(s=>[...s.en.matchAll(/\[([^\[\]\n]+)\]/g)].map(m=>m[1])))];}
   const pool=()=>state.templates.filter(t=>t.part===part&&(!review||state.grades[t.id]==='again'));
   const current=()=>pool().find(t=>t.id===id)||pool()[0];
@@ -59,7 +61,7 @@
       if(persist(next)){undo={template:copy(t),draft:previous.drafts[t.id],grade:previous.grades[t.id]};$('ttUndo').hidden=false;$('ttStatus').textContent='템플릿을 삭제했습니다. 삭제 취소로 되돌릴 수 있습니다.';id='';render();}
     };
     if($('ttReveal'))$('ttReveal').onclick=()=>{revealed=true;render();};
-    if($('ttListen'))$('ttListen').onclick=()=>{stop();if(!('speechSynthesis'in window))return;const u=new SpeechSynthesisUtterance(answer(t));u.lang='en-US';u.rate=.85;window.speechSynthesis.speak(u);};
+    if($('ttListen'))$('ttListen').onclick=()=>{stop();if(!('speechSynthesis'in window))return;window.SpeakFreeSpeech.speak(answer(t),{rate:1});};
     if($('ttStop'))$('ttStop').onclick=stop;
     $('ttAgain').onclick=()=>grade('again');$('ttKnown').onclick=()=>grade('known');
     if(stage==='build'){update(t);document.querySelectorAll('[data-slot]').forEach(input=>input.oninput=()=>{stop();const next=copy(state);next.drafts[t.id]||={};Object.defineProperty(next.drafts[t.id],input.dataset.slot,{value:input.value,enumerable:true,configurable:true,writable:true});if(persist(next))update(t);});}

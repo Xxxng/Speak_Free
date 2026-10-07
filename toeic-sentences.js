@@ -1,5 +1,6 @@
-(function(){
+(async function(){
   'use strict';
+  await window.SpeakFreeRecords.ready;
   const $=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const KEY='speakfree_toeic_original_memory_v1';let memory={};
   try{memory=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(_){}
@@ -11,15 +12,17 @@
   const panel=document.createElement('section');panel.id='tsSentencesPanel';
   panel.innerHTML=`<div class="tt-intro"><h3>문법을 다듬은 파트별 만능문장 암기</h3><p>Part 2 · 149개 / Part 3 · 50개 / Part 5 · 61개 항목<br>문법·철자·자연스러운 표현과 한국어 뜻을 검토한 학습 문장입니다. 대괄호 [ ]는 상황에 맞게 바꾸세요. PDF 원본은 출처에서 확인할 수 있습니다.</p></div><div class="ts-layout"><section class="ts-study"><div id="smReviewControls" class="sm-review-controls" hidden><strong id="smReviewTitle"></strong></div><div class="ts-toolbar"><div id="smModes" class="ts-modes"><button data-memory-mode="learn">① 문장 익히기</button><button data-memory-mode="test">② 테스트</button></div><select id="smFilter" class="select-input" aria-label="문장 복습 대상"><option value="all">전체 문장</option><option value="again">다시 외울 문장</option><option value="known">외운 문장</option></select></div><input id="smSearch" class="search-input" placeholder="문장·뜻·번호 검색" aria-label="만능문장 검색"><p id="smProgress" class="ts-progress"></p><article id="smCard" class="ts-card" aria-live="polite"></article><div class="ts-navigation"><button id="smPrev" class="btn btn-ghost">← 이전</button><button id="smShuffle" class="btn btn-ghost">섞어서 연습</button><button id="smNext" class="btn btn-primary">다음 →</button></div></section><aside class="ts-sidebar"><div class="ts-side-title"><h3>번호순 문장 목록</h3><span id="smCount"></span></div><div id="smList" class="ts-list"></div><details class="ts-reference"><summary>현재 쪽의 원문 전체·학습 노트</summary><p id="smPageText" class="sm-original"></p></details><div class="ts-backup"><button id="smExport" class="btn btn-ghost">문장 진도 백업</button><label class="btn btn-ghost">복원<input id="smImport" type="file" accept=".json" hidden></label></div><p id="smStatus" class="ts-small" role="status">암기 진도는 내 템플릿과 별도로 자동 저장됩니다.</p></aside></div>`;
   $('tsTemplatesPanel').after(panel);
-  function stop(){token++;if('speechSynthesis'in window)window.speechSynthesis.cancel();}
+  panel.insertAdjacentHTML('beforeend', '<p id="smDiskStatus" class="ts-small" role="status">컴퓨터 파일에 자동 저장합니다.</p>');
+  function stop(){token++;window.SpeakFreeSpeech.cancel();}
   function setTrack(nextTrack){
-    stop();window.dispatchEvent(new Event('speakfree:toeictrack'));track=nextTrack;
-    const sentences=track!=='templates',review=track==='review';
+    stop();track=nextTrack;window.dispatchEvent(new CustomEvent('speakfree:toeictrack',{detail:{track}}));
+    const sentences=track==='sentences'||track==='review',review=track==='review';
     document.body.dataset.toeicTrack=sentences?'sentences':'templates';
-    $('tsTemplatesPanel').hidden=sentences;panel.hidden=!sentences;$('tsParts').hidden=false;
+    $('tsTemplatesPanel').hidden=track!=='templates';panel.hidden=!sentences;$('tsParts').hidden=track==='universal';
     $('tsSentencesTab').setAttribute('aria-pressed',String(track==='sentences'));
     $('tsReviewTab').setAttribute('aria-pressed',String(review));
-    $('tsTemplatesTab').setAttribute('aria-pressed',String(!sentences));
+    $('tsTemplatesTab').setAttribute('aria-pressed',String(track==='templates'));
+    if($('tsUniversalTab'))$('tsUniversalTab').setAttribute('aria-pressed',String(track==='universal'));
     $('smReviewControls').hidden=!review;$('smFilter').hidden=review;
     document.querySelectorAll('#tsParts [data-part]').forEach(b=>b.hidden=sentences&&!['2','3','5'].includes(b.dataset.part));
     if(sentences){search='';$('smSearch').value='';index=0;revealed=false;if(!['2','3','5'].includes(part))document.querySelector('#tsParts [data-part="2"]').click();render();}
@@ -46,7 +49,7 @@
     if($('smListen'))$('smListen').onclick=()=>speak(c.en,1);
     if($('smRepeat'))$('smRepeat').onclick=()=>speak(c.en,3);
     if($('smStop'))$('smStop').onclick=stop;
-    if($('smClearAgain'))$('smClearAgain').onclick=()=>{const next={...memory};delete next[c.id];try{localStorage.setItem(KEY,JSON.stringify(next));memory=next;stop();revealed=false;render();}catch(_){$('smStatus').textContent='복습 표시를 저장할 수 없습니다.';}};
+    if($('smClearAgain'))$('smClearAgain').onclick=()=>{const next={...memory};delete next[c.id];try{window.SpeakFreeRecords.save(KEY,next);memory=next;stop();revealed=false;render();}catch(_){$('smStatus').textContent='복습 표시를 저장할 수 없습니다.';}};
     $('smAgain').onclick=()=>grade(c,'again');$('smKnown').onclick=()=>grade(c,'known');
   }
   function move(delta){stop();const n=cards().length;if(!n)return;index=(index+delta+n)%n;revealed=false;render();}
@@ -55,17 +58,18 @@
     const unchecking=g==='known'&&memory[c.id]==='known';
     if(unchecking)delete next[c.id];else next[c.id]=g;
     try{
-      localStorage.setItem(KEY,JSON.stringify(next));memory=next;stop();
+      window.SpeakFreeRecords.save(KEY,next);memory=next;stop();
       // Keep the known button on the same card so it can be toggled again.
       if(g==='known'){render();$('smStatus').textContent=unchecking?'외웠어요 체크를 해제했습니다.':'외웠어요로 표시했습니다. 다시 누르면 해제됩니다.';}
       else if(cards().some(item=>item.id===c.id))move(1);
       else{revealed=false;render();}
     }catch(_){$('smStatus').textContent='저장할 수 없습니다. 진도를 백업하세요.';}
   }
-  function speak(text,repeats){stop();if(!('speechSynthesis'in window)){$('smStatus').textContent='이 브라우저는 음성 듣기를 지원하지 않습니다.';return;}const currentToken=token,rate=Number($('smRate').value);const play=n=>{if(token!==currentToken||n<1)return;const u=new SpeechSynthesisUtterance(text);u.lang='en-US';u.rate=rate;u.onend=()=>{if(n>1)setTimeout(()=>play(n-1),1200);};window.speechSynthesis.speak(u);};play(repeats);}
+  function speak(text,repeats){stop();if(!('speechSynthesis'in window)){$('smStatus').textContent='이 브라우저는 음성 듣기를 지원하지 않습니다.';return;}const currentToken=token,rate=Number($('smRate').value);const play=n=>{if(token!==currentToken||n<1)return;window.SpeakFreeSpeech.speak(text,{rate,onend:()=>{if(n>1)setTimeout(()=>play(n-1),1200);}});};play(repeats);}
   $('tsSentencesTab').onclick=()=>setTrack('sentences');
   $('tsReviewTab').onclick=()=>setTrack('review');
   $('tsTemplatesTab').onclick=()=>setTrack('templates');
+  window.addEventListener('speakfree:selecttrack',e=>setTrack(e.detail.track));
   $('smModes').onclick=e=>{const b=e.target.closest('[data-memory-mode]');if(b){stop();mode=b.dataset.memoryMode;revealed=false;render();}};
   $('smFilter').onchange=e=>{stop();filter=e.target.value;index=0;revealed=false;render();};
   $('smSearch').oninput=e=>{stop();search=e.target.value.trim().toLowerCase();index=0;revealed=false;render();};
@@ -91,6 +95,6 @@
   window.addEventListener('speakfree:toeicpart',e=>{stop();part=e.detail.part;search='';$('smSearch').value='';index=0;revealed=false;document.querySelectorAll('#tsParts [data-part]').forEach(b=>b.hidden=document.body.dataset.toeicTrack==='sentences'&&!['2','3','5'].includes(b.dataset.part));if(!panel.hidden)render();});
   window.addEventListener('speakfree:examchange',stop);window.addEventListener('pagehide',stop);
   $('smExport').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify({type:'speakfree-toeic-original-memory',version:1,memory},null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='speakfree-toeic-original-memory.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-  $('smImport').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;const data=JSON.parse(await file.text());if(data.type!=='speakfree-toeic-original-memory'||data.version!==1||!data.memory||typeof data.memory!=='object'||Array.isArray(data.memory))throw Error();for(const [id,g]of Object.entries(data.memory))if(!TOEIC_SENTENCES.some(c=>c.id===id)||!['again','known'].includes(g))throw Error();const next={...memory,...data.memory};localStorage.setItem(KEY,JSON.stringify(next));memory=next;stop();render();$('smStatus').textContent='문장 암기 진도를 복원했습니다.';}catch(_){$('smStatus').textContent='복원하지 못했습니다. 문장 진도 백업 JSON인지 확인하세요.';}e.target.value='';};
+  $('smImport').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;const data=JSON.parse(await file.text());if(data.type!=='speakfree-toeic-original-memory'||data.version!==1||!data.memory||typeof data.memory!=='object'||Array.isArray(data.memory))throw Error();for(const [id,g]of Object.entries(data.memory))if(!TOEIC_SENTENCES.some(c=>c.id===id)||!['again','known'].includes(g))throw Error();const next={...memory,...data.memory};window.SpeakFreeRecords.save(KEY,next);memory=next;stop();render();$('smStatus').textContent='문장 암기 진도를 복원했습니다.';}catch(_){$('smStatus').textContent='복원하지 못했습니다. 문장 진도 백업 JSON인지 확인하세요.';}e.target.value='';};
   setTrack('sentences');
 })();

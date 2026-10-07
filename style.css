@@ -967,3 +967,7 @@ button:disabled { opacity: .4; cursor: default; }
 .sm-review-controls { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:16px; margin:0 0 16px; background:var(--bg-glass-strong); border-radius:12px; }
 .ts-grade button[aria-pressed="true"] { border-color:var(--accent-secondary); color:var(--accent-secondary); background:var(--bg-glass-strong); }
 .sm-part-review-count { display:block; margin-top:8px; color:var(--text-secondary); font-size:0.75rem; }
+/* Universal template editor */
+.ut-editor-form { display: grid; gap: 16px; }
+.ut-editor-form label { display: grid; gap: 8px; }
+.ut-editor-form textarea { width: 100%; box-sizing: border-box; padding: 12px; color: inherit; background: var(--bg-secondary, #161b2c); border: 1px solid var(--border-color, #39405a); border-radius: 10px; font: inherit; resize: vertical; }
